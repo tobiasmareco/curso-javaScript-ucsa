@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCSA JavaScript - 1</title>
+  </head>
+  <style>
+    .active{
+        background-color: blue;
+        padding: 5px 20px;
+        border-radius: 2px;
+    }
+    .btn{
+        padding: 10px;
+        background-color: green;
+        text-align: center;
+        border-radius: 50px;
+        color: #fff;
+        font:bold;
+        border: none;
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    /* label{
+        display: block;
+    } */
+  </style>
+  <body style="padding:0; margin: 0;">
+    <div>
+      <nav style="background-color:#000; padding: 5px;">
+        <ul style="display: flex; justify-content: center; gap: 30px; align-items: center;">
+          <li style="color:#fff; list-style: none;">
+            <a href="/html/index.html" style="text-decoration: none; color: inherit;cursor: pointer;"> Index</a>
+          </li>
+          <li style="color:#fff; list-style: none;" class="active">
+            <a href="#" style="text-decoration: none; color: inherit;cursor: pointer;"> Page 1</a>
+          </li>
+          <!-- <li style="color:#fff; list-style: none;">
+            <a href="/html/Page-2.html" style="text-decoration: none; color: inherit;cursor: pointer;"> Page 2</a>
+          </li> -->
+        </ul>
+      </nav>
+    </div>
+    <section id="form-socios" style="margin:0 auto; text-align: center; align-items: center;">
+        <form id="formData" action="" style="display:flex; justify-content: center; flex-direction: column; width: 300px; margin: 10px auto; gap: 5px;">
+            <label for="">NOMBRE Y APELIDO</label>
+            <input type="text" name="username" id="nombre_apellido" required>
+            <label for="">NUMERO DE CUENTA</label>
+            <input type="text" name="name" id="numero_cuenta" required>
+            <label for="">TIPO DE CUENTA</label> 
+            <select name="" id="tipo_cuenta" required>
+                <option value="1" selected>Ahorro programado</option>
+                <option value="2">Ahorro a la vista</option>
+                <option value="3">Prestamo</option>
+                <option value="4">Targeta de credito</option>
+            </select>
+            <label for="">NUMERO DE SOCIO</label>
+            <input type="number" name="name" id="numero_socio" min="1" required>
+            <label for="">SALDO CUENTA</label>
+            <input type="text" name="name" id="saldo_cuenta" required>
+            <input type="submit" value="Crear socio" class="btn" id="sendData">
+        </form>
+        <a href="/html/index.html" class="btn" style="background-color: gray !important; text-decoration: none;">Volver</a>
+    </section>
+    <script src="/js/09092022/cooperativa-page1.js"></script>
+  </body>
+</html>
+ 

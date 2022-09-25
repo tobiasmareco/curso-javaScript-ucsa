@@ -1,0 +1,44 @@
+Parte 1 {
+    Supongamos que al ejercicio anterior necesitamos agregar otra invocación a un servicio REST
+
+Primero, creamos una función llamada listarUsuarios(usuarios) que reciba los usuarios devueltos por
+el REST y genere los elementos en el <div id=“usuarios”>, refactoreamos
+
+Segundo, creamos una función llamada getUsuarios() que retorne el promise object devuelto por el
+fetch(..)
+
+Tercero, creamos una función llamada getUsuario(id) que retorne el promise object devuelto por el
+fetch(..) que apunte al REST para un usuario específico
+
+Cuarto, creamos un <div id=“usuario2”> en el cual se deberá mostrar el texto Cargando… hasta que
+se cargue en él los datos del usuario de id=2
+
+Quinto, cambiar la invocación al fetch original por la invicación a la función getUsuarios(), en el
+último then, retornar el objeto promesa devuelto por el método getUsuario, pasandole el id 2
+
+Sexto, agregar un then que tome el dato del usuario devuelto por el then anterior y lo convierta a
+json()
+
+Séptimo, agregar un then que tome el json() del then anterior y lo muestre en el <div id=“usuario2”,
+esto puede realizarse llamando a una función que muestre los datos y haga que el texto Cargando…
+del div desaparezca.
+
+Octavo, dividir ambos div con un nuevo elemento hr y mostrar el avatar del usuario 2 debajo de su
+nombre, en el div correspondiente
+}
+Parte 2 {
+    Crear una función que devuelva una promesa, en caso exitoso que devuelva
+los datos de un vehiculo: marca, modelo, color, anho; en formato JSON string
+
+Mostrar en consola la información devuelta por la función creada, una vez que
+se hayan mostrado los datos del usuario 2
+
+Crear un elemento hr y mostrar en un <div id=“auto”> los datos del vehiculo
+
+Hacer que la función creada tarde 4 segundos en procesar la información y
+devolver el promise (utilizar setTimeout)
+
+Llamar a la función antes de mostrar los datos del usuario 2, realizar las
+modificaciones para que las promesas devuelvan el dato esperado por el
+siguiente then
+}

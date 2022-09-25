@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCSA JavaScript</title>
+  </head>
+  <style>
+    .active {
+      background-color: blue;
+      padding: 5px 20px;
+      border-radius: 2px;
+    }
+    .nodata {
+      color: red;
+      text-align: center;
+      font-style: italic;
+    }
+    .btn {
+      padding: 10px;
+      background-color: green;
+      text-align: center;
+      border-radius: 50px;
+      color: white;
+      font: bold;
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      cursor: pointer;
+      border: none;
+    }
+    .card {
+      background: rgb(34, 193, 195);
+      background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 0.4489146000196954) 0%,
+        rgba(32, 32, 32, 0.9139005944174545) 4%
+      );
+      width: 150px;
+      text-align: center;
+      padding: 10px 20px;
+      margin: 5px;
+      color: white;
+      font-style: italic;
+    }
+  </style>
+
+  <body style="padding: 0; margin: 0">
+    <!-- BEGIN SECCION DE JSON EMPRESAS -->
+    <!-- <div style="margin:0 auto; max-width:1200px; text-align: center;">
+        <header>
+            <h1>Empresas Paraguayas</h1>
+        </header>
+        <section id="empresas" class="empresas container">
+
+        </section>
+    </div>
+    <script src="../js/09092022/jsonEmpresas.js"></script> -->
+    <!-- END SECCION JSON EMPRESAS -->
+    <!-- ********************************************************************** -->
+
+    <!-- BEGIN SECCION LOCALSTORAGE -->
+    <!-- <h1 style="margin: 0 auto; text-align: center;">Local Storage</h1>
+    <section id="userdata">
+      <h3 id="username"></h3>
+    </section>
+    <script src="/js/09092022/localStorage.js"></script> -->
+    <!-- END SECCION LOCALSTORAGE -->
+    <!-- ********************************************************************** -->
+    <!-- BEGIN SECCION EJERCICIO COOPERATIVA -->
+    <div>
+      <nav style="background-color: #000; padding: 5px">
+        <ul
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+          "
+        >
+          <li style="color: #fff; list-style: none" class="active">
+            <a
+              href="#"
+              style="text-decoration: none; color: inherit; cursor: pointer"
+            >
+              Index</a
+            >
+          </li>
+          <li style="color: #fff; list-style: none">
+            <a
+              href="/html/Page-1.html"
+              style="text-decoration: none; color: inherit; cursor: pointer"
+            >
+              Page 1</a
+            >
+          </li>
+          <!-- <li style="color: #fff; list-style: none">
+                    <a href="/html/Page-2.html" style="text-decoration: none; color: inherit; cursor: pointer">
+                        Page 2</a>
+                </li> -->
+        </ul>
+      </nav>
+    </div>
+    <section id="cooperativa-data">
+      <div id="data-socios" style="display:grid; grid-template-columns: repeat(3,1fr); justify-items:center;"></div>
+    </section>
+    <script src="/js/09092022/cooperativa.js"></script>
+    <!-- END SECCION EJERCICIO COOPERATIVA -->
+  </body>
+</html>
